@@ -1,0 +1,12 @@
+node_modules/
+client/dist/
+server/dist/
+**/.vite/
+**/.cache/
+*.tsbuildinfo
+uploads/
+
+# env (không push)
+*.env
+.env*
+!*.env.example
