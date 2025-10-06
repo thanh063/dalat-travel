@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn*.log
+pnpm-debug.log
+
+# Build output
+client/dist/
+server/dist/
+**/.vite/
+**/.cache/
+*.tsbuildinfo
+
+# Local uploads
+uploads/
+
+# Env & secrets
+*.env
+.env*
+!*.env.example
+
+# Prisma local files (nếu có sqlite)
+server/prisma/*.sqlite
+server/prisma/dev.db
