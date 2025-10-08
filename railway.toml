@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[variables]
+NIXPACKS_NODE_VERSION = "18"
+NIXPACKS_NODE_INSTALL_DEV = "true"
+
+[[services]]
+name = "dalat-travel"
+root = "server"
+build = "npm ci --include=dev && npx prisma generate && npm run build"
+start = "node dist/index.js"
